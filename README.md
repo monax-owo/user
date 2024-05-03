@@ -1,9 +1,9 @@
 # install
 
-| name | target sites | install | description |
-|------|--------------|---------|-------------|
-| BIG show hide | [Twitter] | [HERE][tbsh] | [MD][tbshMD] |
-| Adblock | [Twitter] | [HERE][ta] | [MD][taMD] |
+| name          | target sites | install      | description  |
+|---------------|--------------|--------------|--------------|
+| BIG show hide | [Twitter]    | [HERE][tbsh] | [MD][tbshMD] |
+| Adblock       | [Twitter]    | [HERE][ta]   | [MD][taMD]   |
 
 <!-- target -->
 [Twitter]: https://twitter.com
