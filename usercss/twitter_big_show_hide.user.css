@@ -5,7 +5,8 @@
 @description    Twittr Big show hide button
 @author         monax-owo
 ==/UserStyle== */
-@-moz-document domain("twitter.com") {
+@-moz-document domain("twitter.com") ,
+							 domain("x.com") {
 	/* media */
 	.r-edyy15 > .css-1rynq56.r-bcqeeo.r-qvutc0.r-1tl8opc.r-a023e6.r-rjixqe.r-16dba41.r-1loqt21 {
 		width: 100%;
