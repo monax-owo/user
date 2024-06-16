@@ -9,9 +9,10 @@
 // @grant        none
 // @require      https://cdn.jsdelivr.net/gh/vanjs-org/van/public/van-1.5.0.nomodule.min.js
 // ==/UserScript==
+	// @ts-ignore
+	import van from "https://cdn.jsdelivr.net/gh/vanjs-org/van/public/van-1.5.0.min.js";
 (() => {
 	"use strict";
-	import van from "https://cdn.jsdelivr.net/gh/vanjs-org/van/public/van-1.5.0.min.js";
 	console.log("working!");
 	let loop = 0;
 	let nth = 1;
