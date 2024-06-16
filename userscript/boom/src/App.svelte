@@ -53,7 +53,7 @@
 	<label>
 		<input type="checkbox" name="toggle" on:click={() => deletePost()} />
 		<span>del{nth}</span>
-		<span>0.0.4</span>
+		<span>0.0.5</span>
 	</label>
 </div>
 

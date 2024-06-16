@@ -322,7 +322,7 @@
         );
         t3 = space();
         span1 = element("span");
-        span1.textContent = "0.0.4";
+        span1.textContent = "0.0.5";
         attr(input, "type", "checkbox");
         attr(input, "name", "toggle");
         attr(input, "class", "svelte-1o5elq2");
