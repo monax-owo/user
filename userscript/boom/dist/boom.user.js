@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name       boom
 // @namespace  a
-// @version    0.0.3
+// @version    0.0.0
 // @author     monkey
 // @icon       https://www.google.com/s2/favicons?sz=64&domain=line.me
 // @match      https://linevoom.line.me/*
 // @grant      GM_addStyle
 // ==/UserScript==
 
-(e=>{if(typeof GM_addStyle=="function"){GM_addStyle(e);return}const t=document.createElement("style");t.textContent=e,document.head.append(t)})(' *,:before,:after{box-sizing:border-box;background-repeat:no-repeat}:before,:after{text-decoration:inherit;vertical-align:inherit}:where(:root){cursor:default;line-height:1.5;overflow-wrap:break-word;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%}:where(body){margin:0}:where(h1){font-size:2em;margin:.67em 0}:where(dl,ol,ul) :where(dl,ol,ul){margin:0}:where(hr){color:inherit;height:0}:where(nav) :where(ol,ul){list-style-type:none;padding:0}:where(nav li):before{content:"\u200B";float:left}:where(pre){font-family:monospace,monospace;font-size:1em;overflow:auto}:where(abbr[title]){text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}:where(b,strong){font-weight:bolder}:where(code,kbd,samp){font-family:monospace,monospace;font-size:1em}:where(small){font-size:80%}:where(audio,canvas,iframe,img,svg,video){vertical-align:middle}:where(iframe){border-style:none}:where(svg:not([fill])){fill:currentColor}:where(table){border-collapse:collapse;border-color:inherit;text-indent:0}:where(button,input,select){margin:0}:where(button,[type=button i],[type=reset i],[type=submit i]){-webkit-appearance:button}:where(fieldset){border:1px solid #a0a0a0}:where(progress){vertical-align:baseline}:where(textarea){margin:0;resize:vertical}:where([type=search i]){-webkit-appearance:textfield;outline-offset:-2px}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}:where(dialog){background-color:#fff;border:solid;color:#000;height:-moz-fit-content;height:fit-content;left:0;margin:auto;padding:1em;position:absolute;right:0;width:-moz-fit-content;width:fit-content}:where(dialog:not([open])){display:none}:where(details>summary:first-of-type){display:list-item}:where([aria-busy=true i]){cursor:progress}:where([aria-controls]){cursor:pointer}:where([aria-disabled=true i],[disabled]){cursor:not-allowed}:where([aria-hidden=false i][hidden]){display:initial}:where([aria-hidden=false i][hidden]:not(:focus)){clip:rect(0,0,0,0);position:absolute}:where(iframe,img,input,video,select,textarea){height:auto;max-width:100%}.app.svelte-140p060.svelte-140p060{display:flex;flex-direction:row;margin:0 8px;height:40px;text-align:center;-webkit-user-select:none;-moz-user-select:none;user-select:none}.app.svelte-140p060 label.svelte-140p060{display:inline-flex;flex-direction:row;flex-wrap:wrap;align-items:center;cursor:pointer;text-align:center}input[type=checkbox].svelte-140p060.svelte-140p060{display:block;-webkit-appearance:auto;-moz-appearance:auto;appearance:auto;margin:4px;width:12px;height:12px} ');
+(e=>{if(typeof GM_addStyle=="function"){GM_addStyle(e);return}const t=document.createElement("style");t.textContent=e,document.head.append(t)})(' *,:before,:after{box-sizing:border-box;background-repeat:no-repeat}:before,:after{text-decoration:inherit;vertical-align:inherit}:where(:root){cursor:default;line-height:1.5;overflow-wrap:break-word;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%}:where(body){margin:0}:where(h1){font-size:2em;margin:.67em 0}:where(dl,ol,ul) :where(dl,ol,ul){margin:0}:where(hr){color:inherit;height:0}:where(nav) :where(ol,ul){list-style-type:none;padding:0}:where(nav li):before{content:"\u200B";float:left}:where(pre){font-family:monospace,monospace;font-size:1em;overflow:auto}:where(abbr[title]){text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}:where(b,strong){font-weight:bolder}:where(code,kbd,samp){font-family:monospace,monospace;font-size:1em}:where(small){font-size:80%}:where(audio,canvas,iframe,img,svg,video){vertical-align:middle}:where(iframe){border-style:none}:where(svg:not([fill])){fill:currentColor}:where(table){border-collapse:collapse;border-color:inherit;text-indent:0}:where(button,input,select){margin:0}:where(button,[type=button i],[type=reset i],[type=submit i]){-webkit-appearance:button}:where(fieldset){border:1px solid #a0a0a0}:where(progress){vertical-align:baseline}:where(textarea){margin:0;resize:vertical}:where([type=search i]){-webkit-appearance:textfield;outline-offset:-2px}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}:where(dialog){background-color:#fff;border:solid;color:#000;height:-moz-fit-content;height:fit-content;left:0;margin:auto;padding:1em;position:absolute;right:0;width:-moz-fit-content;width:fit-content}:where(dialog:not([open])){display:none}:where(details>summary:first-of-type){display:list-item}:where([aria-busy=true i]){cursor:progress}:where([aria-controls]){cursor:pointer}:where([aria-disabled=true i],[disabled]){cursor:not-allowed}:where([aria-hidden=false i][hidden]){display:initial}:where([aria-hidden=false i][hidden]:not(:focus)){clip:rect(0,0,0,0);position:absolute}:where(iframe,img,input,video,select,textarea){height:auto;max-width:100%}.app.svelte-1o5elq2.svelte-1o5elq2{display:flex;flex-direction:row;margin:0 8px;height:40px;-webkit-user-select:none;-moz-user-select:none;user-select:none;text-align:center}.app.svelte-1o5elq2 label.svelte-1o5elq2{display:inline-flex;flex-direction:row;flex-wrap:wrap;align-items:center;cursor:pointer;text-align:center}input[type=checkbox].svelte-1o5elq2.svelte-1o5elq2{display:block;-webkit-appearance:auto;-moz-appearance:auto;appearance:auto;margin:4px;width:12px;height:12px} ');
 
 (function () {
   'use strict';
@@ -301,9 +301,11 @@
     let label;
     let input;
     let t0;
-    let span;
+    let span0;
     let t1;
     let t2;
+    let t3;
+    let span1;
     let mounted;
     let dispose;
     return {
@@ -312,26 +314,31 @@
         label = element("label");
         input = element("input");
         t0 = space();
-        span = element("span");
+        span0 = element("span");
         t1 = text("del");
         t2 = text(
           /*nth*/
           ctx[0]
         );
+        t3 = space();
+        span1 = element("span");
+        span1.textContent = "0.0.4";
         attr(input, "type", "checkbox");
         attr(input, "name", "toggle");
-        attr(input, "class", "svelte-140p060");
-        attr(label, "class", "svelte-140p060");
-        attr(div, "class", "app svelte-140p060");
+        attr(input, "class", "svelte-1o5elq2");
+        attr(label, "class", "svelte-1o5elq2");
+        attr(div, "class", "app svelte-1o5elq2");
       },
       m(target, anchor) {
         insert(target, div, anchor);
         append(div, label);
         append(label, input);
         append(label, t0);
-        append(label, span);
-        append(span, t1);
-        append(span, t2);
+        append(label, span0);
+        append(span0, t1);
+        append(span0, t2);
+        append(label, t3);
+        append(label, span1);
         if (!mounted) {
           dispose = listen(
             input,

@@ -53,6 +53,7 @@
 	<label>
 		<input type="checkbox" name="toggle" on:click={() => deletePost()} />
 		<span>del{nth}</span>
+		<span>0.0.4</span>
 	</label>
 </div>
 
@@ -62,8 +63,8 @@
 		flex-direction: row;
 		margin: 0 8px;
 		height: 40px;
-		text-align: center;
 		user-select: none;
+		text-align: center;
 		& label {
 			display: inline-flex;
 			flex-direction: row;
