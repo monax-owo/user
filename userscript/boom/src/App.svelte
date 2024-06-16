@@ -29,13 +29,11 @@
 						"sec-fetch-mode": "cors",
 						"sec-fetch-site": "same-origin",
 						"sec-gpc": "1",
-						"sentry-trace": "75efc58c2367446ab8d9d2750a17ef1c-843191a5392664d0-0",
-						"x-timeline-tid": "d818e348e76802a4c1bee4e4e463cbbe",
 						"x-timeline-webversion": "3.44.1.0",
 					},
 					referrer: "https://linevoom.line.me/user/_dVkHnuS19n3F4QZRu6woElyJ1YUwrYkVVDKc2mk",
 					referrerPolicy: "strict-origin-when-cross-origin",
-					body: `{"postId":"${postId.toString}"}`,
+					body: `{"postId":"${postId}"}`,
 					method: "POST",
 					mode: "cors",
 					credentials: "include",
@@ -44,6 +42,7 @@
 				console.log("with images");
 			}
 			console.log(postId);
+			console.log("\n");
 			++nth;
 			++loop;
 		}
