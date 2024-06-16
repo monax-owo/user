@@ -4,7 +4,7 @@
 	console.log("working!");
 	let nth = 1;
 	const deletePost = () => {
-		const MAX = 15;
+		const MAX = 100;
 		let loop = 0;
 		const feedList = document.getElementsByClassName("feedListLayout_feed_list__Z1Jh_")[0];
 		while (loop < MAX) {
@@ -63,6 +63,7 @@
 		margin: 0 8px;
 		height: 40px;
 		text-align: center;
+		user-select: none;
 		& label {
 			display: inline-flex;
 			flex-direction: row;
