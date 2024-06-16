@@ -9,8 +9,7 @@
 // @grant        none
 // @require      https://cdn.jsdelivr.net/gh/vanjs-org/van/public/van-1.5.0.nomodule.min.js
 // ==/UserScript==
-	// @ts-ignore
-	import van from "https://cdn.jsdelivr.net/gh/vanjs-org/van/public/van-1.5.0.min.js";
+
 (() => {
 	"use strict";
 	console.log("working!");
