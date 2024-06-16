@@ -35,7 +35,7 @@
 					},
 					referrer: "https://linevoom.line.me/user/_dVkHnuS19n3F4QZRu6woElyJ1YUwrYkVVDKc2mk",
 					referrerPolicy: "strict-origin-when-cross-origin",
-					body: `{"postId":${postId}}`,
+					body: `{"postId":"${postId.toString}"}`,
 					method: "POST",
 					mode: "cors",
 					credentials: "include",
