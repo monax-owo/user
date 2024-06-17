@@ -41,14 +41,23 @@
 				mode: "cors",
 				credentials: "include",
 			});
-			console.log(postId);
+			post.remove();
+			console.log(`${postId} removed!`);
 			console.log("\n");
 			++nth;
 			++loop;
 		}
+		console.log("break!");
+		
 	};
 </script>
 
+<svelte:window
+	on:keydown={(e) => {
+		if (e.code === "KeyR") {
+			deletePost();
+		}
+	}} />
 <div class="app">
 	<label>
 		<input type="checkbox" name="toggle" on:click={() => deletePost()} />

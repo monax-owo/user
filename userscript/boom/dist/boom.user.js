@@ -340,12 +340,20 @@
         append(label, t3);
         append(label, span1);
         if (!mounted) {
-          dispose = listen(
-            input,
-            "click",
-            /*click_handler*/
-            ctx[2]
-          );
+          dispose = [
+            listen(
+              window,
+              "keydown",
+              /*keydown_handler*/
+              ctx[2]
+            ),
+            listen(
+              input,
+              "click",
+              /*click_handler*/
+              ctx[3]
+            )
+          ];
           mounted = true;
         }
       },
@@ -364,7 +372,7 @@
           detach(div);
         }
         mounted = false;
-        dispose();
+        run_all(dispose);
       }
     };
   }
@@ -408,14 +416,21 @@
           mode: "cors",
           credentials: "include"
         });
-        console.log(postId);
+        post.remove();
+        console.log(`${postId} removed!`);
         console.log("\n");
         $$invalidate(0, ++nth);
         ++loop;
       }
+      console.log("break!");
+    };
+    const keydown_handler = (e) => {
+      if (e.code === "KeyR") {
+        deletePost();
+      }
     };
     const click_handler = () => deletePost();
-    return [nth, deletePost, click_handler];
+    return [nth, deletePost, keydown_handler, click_handler];
   }
   class App extends SvelteComponent {
     constructor(options) {
