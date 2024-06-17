@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       boom
 // @namespace  a
-// @version    0.1.2
+// @version    0.1.3
 // @author     monkey
 // @icon       https://www.google.com/s2/favicons?sz=64&domain=line.me
 // @match      https://linevoom.line.me/*
@@ -375,7 +375,7 @@
       }
     };
   }
-  const V = "0.1.2";
+  const V = "0.1.3";
   function instance($$self, $$props, $$invalidate) {
     console.log("working!");
     let nth = 1;
@@ -387,6 +387,8 @@
         let post = feedList.querySelector(`article:nth-child(${nth})`);
         if (post === null) {
           console.log("post is nulled");
+          console.log(nth);
+          console.log("\n");
           break;
         }
         let postId = post.id.replace("article_", "");

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import "sanitize.css/sanitize.css";
 	import "sanitize.css/assets.css";
-	const V = "0.1.2";
+	const V = "0.1.3";
 	console.log("working!");
 	let nth = 1;
 	const deletePost = () => {
@@ -12,6 +12,9 @@
 			let post = feedList.querySelector(`article:nth-child(${nth})`);
 			if (post === null) {
 				console.log("post is nulled");
+				console.log(nth);
+				console.log("\n");
+
 				break;
 			}
 			let postId = post.id.replace("article_", "");
