@@ -1,7 +1,7 @@
 <script lang="ts">
 	import "sanitize.css/sanitize.css";
 	import "sanitize.css/assets.css";
-	const V = "0.1.1";
+	const V = "0.1.2";
 	console.log("working!");
 	let nth = 1;
 	const deletePost = () => {

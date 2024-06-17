@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       boom
 // @namespace  a
-// @version    0.1.1
+// @version    0.1.2
 // @author     monkey
 // @icon       https://www.google.com/s2/favicons?sz=64&domain=line.me
 // @match      https://linevoom.line.me/*
@@ -375,7 +375,7 @@
       }
     };
   }
-  const V = "0.1.1";
+  const V = "0.1.2";
   function instance($$self, $$props, $$invalidate) {
     console.log("working!");
     let nth = 1;
