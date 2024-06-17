@@ -12,7 +12,7 @@ export default defineConfig({
 				icon: "https://www.google.com/s2/favicons?sz=64&domain=line.me",
 				namespace: "a",
 				match: ["https://linevoom.line.me/*"],
-				version: "0.1.3",
+				version: "0.1.4",
 			},
 		}),
 	],

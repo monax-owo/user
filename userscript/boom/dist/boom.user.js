@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       boom
 // @namespace  a
-// @version    0.1.3
+// @version    0.1.4
 // @author     monkey
 // @icon       https://www.google.com/s2/favicons?sz=64&domain=line.me
 // @match      https://linevoom.line.me/*
@@ -66,12 +66,6 @@
   }
   function children(element2) {
     return Array.from(element2.childNodes);
-  }
-  function set_data(text2, data) {
-    data = "" + data;
-    if (text2.data === data) return;
-    text2.data = /** @type {string} */
-    data;
   }
   let current_component;
   function set_current_component(component) {
@@ -302,9 +296,7 @@
     let button;
     let t0;
     let span0;
-    let t1;
     let t2;
-    let t3;
     let span1;
     let mounted;
     let dispose;
@@ -315,12 +307,8 @@
         button = element("button");
         t0 = space();
         span0 = element("span");
-        t1 = text("del");
-        t2 = text(
-          /*nth*/
-          ctx[0]
-        );
-        t3 = space();
+        span0.textContent = "del";
+        t2 = space();
         span1 = element("span");
         span1.textContent = `${V}`;
         attr(button, "type", "button");
@@ -334,9 +322,7 @@
         append(label, button);
         append(label, t0);
         append(label, span0);
-        append(span0, t1);
-        append(span0, t2);
-        append(label, t3);
+        append(label, t2);
         append(label, span1);
         if (!mounted) {
           dispose = [
@@ -344,26 +330,19 @@
               window,
               "keydown",
               /*keydown_handler*/
-              ctx[2]
+              ctx[1]
             ),
             listen(
               button,
               "click",
               /*click_handler*/
-              ctx[3]
+              ctx[2]
             )
           ];
           mounted = true;
         }
       },
-      p(ctx2, [dirty]) {
-        if (dirty & /*nth*/
-        1) set_data(
-          t2,
-          /*nth*/
-          ctx2[0]
-        );
-      },
+      p: noop,
       i: noop,
       o: noop,
       d(detaching) {
@@ -375,19 +354,17 @@
       }
     };
   }
-  const V = "0.1.3";
-  function instance($$self, $$props, $$invalidate) {
+  const V = "0.1.4";
+  function instance($$self) {
     console.log("working!");
-    let nth = 1;
     const deletePost = () => {
       const MAX = 1e3;
       let loop = 0;
       const feedList = document.getElementsByClassName("feedListLayout_feed_list__Z1Jh_")[0];
       while (loop < MAX) {
-        let post = feedList.querySelector(`article:nth-child(${nth})`);
+        let post = feedList.querySelector(`article:nth-child(1)`);
         if (post === null) {
           console.log("post is nulled");
-          console.log(nth);
           console.log("\n");
           break;
         }
@@ -427,7 +404,6 @@
         post.remove();
         console.log(`${postId} removed`);
         console.log("\n");
-        $$invalidate(0, ++nth);
         ++loop;
       }
       console.log("break");
@@ -438,7 +414,7 @@
       }
     };
     const click_handler = () => deletePost();
-    return [nth, deletePost, keydown_handler, click_handler];
+    return [deletePost, keydown_handler, click_handler];
   }
   class App extends SvelteComponent {
     constructor(options) {

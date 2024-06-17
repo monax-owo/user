@@ -1,18 +1,16 @@
 <script lang="ts">
 	import "sanitize.css/sanitize.css";
 	import "sanitize.css/assets.css";
-	const V = "0.1.3";
+	const V = "0.1.4";
 	console.log("working!");
-	let nth = 1;
 	const deletePost = () => {
 		const MAX = 1000;
 		let loop = 0;
 		const feedList = document.getElementsByClassName("feedListLayout_feed_list__Z1Jh_")[0];
 		while (loop < MAX) {
-			let post = feedList.querySelector(`article:nth-child(${nth})`);
+			let post = feedList.querySelector(`article:nth-child(1)`);
 			if (post === null) {
 				console.log("post is nulled");
-				console.log(nth);
 				console.log("\n");
 
 				break;
@@ -54,7 +52,6 @@
 			post.remove();
 			console.log(`${postId} removed`);
 			console.log("\n");
-			++nth;
 			++loop;
 		}
 		console.log("break");
@@ -70,7 +67,7 @@
 <div class="app">
 	<label>
 		<button type="button" on:click={() => deletePost()}></button>
-		<span>del{nth}</span>
+		<span>del</span>
 		<span>{V}</span>
 	</label>
 </div>
