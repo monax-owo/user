@@ -1,6 +1,7 @@
 <script lang="ts">
 	import "sanitize.css/sanitize.css";
 	import "sanitize.css/assets.css";
+	const V = "0.1.1";
 	console.log("working!");
 	let nth = 1;
 	const deletePost = () => {
@@ -48,21 +49,20 @@
 			++loop;
 		}
 		console.log("break!");
-		
 	};
 </script>
 
 <svelte:window
 	on:keydown={(e) => {
-		if (e.code === "KeyR") {
+		if (e.key === "r") {
 			deletePost();
 		}
 	}} />
 <div class="app">
 	<label>
-		<input type="checkbox" name="toggle" on:click={() => deletePost()} />
+		<button type="button" on:click={() => deletePost()}></button>
 		<span>del{nth}</span>
-		<span>0.0.5</span>
+		<span>{V}</span>
 	</label>
 </div>
 
@@ -83,7 +83,7 @@
 			text-align: center;
 		}
 	}
-	input[type="checkbox"] {
+	button {
 		display: block;
 		appearance: auto;
 		margin: 4px;
