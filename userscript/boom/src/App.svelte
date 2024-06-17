@@ -10,9 +10,15 @@
 		const feedList = document.getElementsByClassName("feedListLayout_feed_list__Z1Jh_")[0];
 		while (loop < MAX) {
 			let post = feedList.querySelector(`article:nth-child(${nth})`);
-			if (post === null) break;
+			if (post === null) {
+				console.log("post is nulled");
+				break;
+			}
 			let postId = post.id.replace("article_", "");
-			if (postId === undefined || postId === "") break;
+			if (postId === undefined || postId === "") {
+				console.log("postId is undefined");
+				break;
+			}
 			if (post.querySelector(".media_image") === null) {
 				console.log("no image");
 			} else {
@@ -43,12 +49,12 @@
 				credentials: "include",
 			});
 			post.remove();
-			console.log(`${postId} removed!`);
+			console.log(`${postId} removed`);
 			console.log("\n");
 			++nth;
 			++loop;
 		}
-		console.log("break!");
+		console.log("break");
 	};
 </script>
 
