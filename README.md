@@ -14,6 +14,7 @@
 
 [tbsh]: usercss/twitter_big_show_hide.user.css?raw=true
 [ta]: usercss/twitter_adblock.user.css?raw=true
+[wide]: usercss/twitter_wide.user.css?raw=true
 
 <!-- require -->
 
@@ -21,3 +22,4 @@
 
 [tbshMD]: ./doc/twitter_big_show_hide.md
 [taMD]: ./doc/twitter_adblock.md
+[wideMD]: ./doc/twitter_wide.md
