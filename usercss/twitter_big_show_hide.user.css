@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name           Twitter BIG show hide
-@namespace      ?
+@namespace      https://github.com/monax-owo/user
 @version        0.0.2
-@description    Twittr Big show hide button
+@description    Twitter BIG show hide
 @author         monax-owo
 ==/UserStyle== */
 @-moz-document domain("twitter.com") ,
@@ -20,7 +20,6 @@
 			font-size: 4rem;
 		}
 	}
-
 	/* show */
 	.r-drfeu3 > .r-1e081e0 > .r-173mn98 {
 		align-self: auto;
@@ -36,10 +35,9 @@
 			}
 		}
 	}
-
 	/* hide */
 	.r-e1k2in > div > span::before {
-		content: '非表示';
+		content: "非表示";
 		font-size: 1.2rem;
 	}
 	.r-e1k2in > div > span {

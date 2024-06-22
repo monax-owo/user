@@ -1,0 +1,72 @@
+/* ==UserStyle==
+@name           Twitter Wide
+@namespace      https://github.com/monax-owo/user
+@version        0.0.2
+@description    Twitter Wide
+@author         monax-owo
+==/UserStyle== */
+@-moz-document domain("twitter.com") ,
+							 domain("x.com") {
+	[data-testid="sidebarColumn"] {
+		display: none;
+	}
+	[class="css-1dbjc4n"][data-testid="placementTracking"]:not(:has(div[aria-label="スペースに参加する"])) {
+		display: none;
+	}
+	a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1niwhzg.r-sdzlij.r-1phboty.r-rs99b7.r-1loqt21.r-1s2bzr4.r-2yi16.r-1qi8awa.r-1ny4l3l.r-ymttw5.r-o7ynqc.r-6416eg.r-lrvibr,
+	a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1niwhzg.r-1ets6dv.r-sdzlij.r-1phboty.r-rs99b7.r-1loqt21.r-1s2bzr4.r-2yi16.r-1qi8awa.r-1ny4l3l.r-ymttw5.r-o7ynqc.r-6416eg.r-lrvibr {
+		display: none;
+	}
+	.css-1dbjc4n.r-aqfbo4.r-1pi2tsx.r-1xcajam.r-ipm5af {
+		top: 5em;
+	}
+	header.css-1dbjc4n.r-obd0qt.r-16y2uox.r-lrvibr.r-1g40b8q {
+		z-index: 0;
+	}
+	.css-1dbjc4n.r-dnmrzs.r-1vvnge1 {
+		display: none;
+	}
+	div[aria-label="アカウントメニュー"] {
+		bottom: 80px;
+	}
+	.r-1ye8kvj {
+		max-width: 1500px;
+		margin-left: 0 !important;
+		resize: horizontal;
+	}
+	section[aria-label="セクションの詳細"] {
+		max-width: 600px !important;
+	}
+	div[aria-labelledby*="id"]:not([data-testid*="card"]) {
+		width: 80%;
+	}
+	div[data-testid="sidebarColumn"] {
+		display: none;
+	}
+	div[data-testid="DMDrawer"] {
+		display: none;
+	}
+	header[role="banner"] {
+		align-items: flex-start !important;
+	}
+	div[aria-label="位置情報をタグ付け"] {
+		display: none;
+	}
+	[class="css-1dbjc4n"][data-testid="placementTracking"]:not(:has(div[aria-label="スペースに参加する"])) {
+		display: none;
+	}
+	div[aria-labelledby="modal-header"] div[class*="r-1phboty r-5kkj8d r-1p0dtai r-18u37iz r-1d2f490"] {
+		display: none;
+	}
+	a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1niwhzg.r-sdzlij.r-1phboty.r-rs99b7.r-1loqt21.r-1s2bzr4.r-2yi16.r-1qi8awa.r-1ny4l3l.r-ymttw5.r-o7ynqc.r-6416eg.r-lrvibr,
+	a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1niwhzg.r-1ets6dv.r-sdzlij.r-1phboty.r-rs99b7.r-1loqt21.r-1s2bzr4.r-2yi16.r-1qi8awa.r-1ny4l3l.r-ymttw5.r-o7ynqc.r-6416eg.r-lrvibr {
+		display: none;
+	}
+	.r-1mdbhws {
+		max-width: 1000px !important;
+	}
+
+	.r-16xksha {
+		flex-grow: 0;
+	}
+}
