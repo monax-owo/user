@@ -1,10 +1,12 @@
 # install
 
-| name          | target sites | install      | description  |
+require: [Stylus](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=ja)
+
+| name | target sites | install | description |
 | ------------- | ------------ | ------------ | ------------ |
-| BIG show hide | [Twitter]    | [HERE][tbsh] | [MD][tbshMD] |
-| Adblock       | [Twitter]    | [HERE][ta]   | [MD][taMD]   |
-| Wide          | [Twitter]    | [HERE][wide] | [MD][wideMD] |
+| BIG show hide | [Twitter] | [HERE][tbsh] | [MD][tbshMD] |
+| Adblock | [Twitter] | [HERE][ta] | [MD][taMD] |
+| Wide | [Twitter] | [HERE][wide] | [MD][wideMD] |
 
 <!-- target -->
 
